@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wenxi's Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuery.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><b>Wenxi</b></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hamburger-nav is used for mobile screen navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Wenxi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container circle-image">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Wenxi's Profile Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Wenxi</h1>
+        <p class="section__text__p2">IT Support Specialist</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div class="socials-contaner">
+          <img
+            src="./assets/linkedin.png"
+            alt="Wenxi's LinkedIn Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/wenxi-s-kom/', '_blank')"
+          />
+
+          <img
+            src="./assets/github.png"
+            alt="Wenxi's Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com/WenxiDev/', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic-2.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresh Graduate That Have Work With Many Experience</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science in Computer Science (B.Sc.)</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I am an IT Support Specialist with 5 years of experience in troubleshooting PCs and Laptops, 
+              specializing in both Hardware and Software, gained through my work in 
+              commercial settings and as a freelancer.
+              <br /><br />
+              I also have experience in Mobile Programming, particularly with Java for Android applications, 
+              and have been actively learning Mobile Development for the past 3 years.
+              <br /><br />
+              I am passionate about exploring new technologies and continuously learning through hands-on experience. 
+              I believe that staying up-to-date with the latest tech is crucial for solving technical challenges.
+              <br /><br />
+              I am now seeking a role where I can grow within a supportive team and contribute to building systems 
+              that evolve with technological advancements.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">IT Support Competencies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PC Repair</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laptop Repair</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Networking</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CCTV</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Mobile Apps Development</h2>
+            <div class="article-container center">
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/android.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Android</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/dart.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dart</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/flutter.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">My Recent Projects</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1 Picture"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">
+                DISC Psychological Test<br />(Mobile Apps)
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/WenxiDev/DISC-Psychological-Test', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2 Picture"
+                class="project-img"
+                
+              />
+              <h2 class="experience-sub-title project-title">
+                Indonesia Culture Games<br />(Mobile Apps)
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/WenxiDev/Indonesia-Culture-Knowledge-Game', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:examplegmail@gmail.com">wenxiwen60@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/wenxi-s-kom/"
+              target="_blank"
+              >Wenxi</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp.png"
+            alt="WhatsApp Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://wa.me/6282154848428"
+              target="_blank"
+              >+6282154848428</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright © 2025 <b>wenxiwen60.com</b> • All Rights Reserved</p>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <img src="./assets/up-arrow.png" alt="Back to top" />
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
